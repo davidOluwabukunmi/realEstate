@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Real Estate</title>
 </head>
@@ -29,24 +30,24 @@
             <div class="cont_bx">
                 <h1>Modren <br> house</h1>
                 <p>3 bedroom, 1 kitchen, 2 bathroom</p>
-                <div class="weather">
+                 <!-- <div class="weather">
                     <h6>42 <span>Very Hot</span></h6>
                 </div>
                 <div class="btns_cont">
-                    <i class="bi bi-arrow-left"></i>
-                    <i class="bi bi-arrow-right"></i>
-                </div>
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>  -->
 
                 <div class="image_bx">
                     <div class="card">
-                        <img src="./Assets/images/Real estate 2.jpg" alt="">
+                        <img src="./Assets/images/Realestate2.jpg" alt="">
                     </div>
                     <div class="card">
                         <img src="./Assets/images/House.avif" alt="">
                     </div>
                     <div class="card">
-                        <img src="./Assets/images/Real estate 2.jpg" alt="">
-                        <h6>+6</h6>
+                        <img src="./Assets/images/Realestate2.jpg" alt="">
+                        <h6 id="h6">+6</h6>
                     </div>
                 </div>
             </div>
@@ -59,14 +60,14 @@
                     <button> <i class="bi bi-tv-fill"></i></button>
                 </div>
                 <div class="select">
-                    <div class="card">
+                    <div class="card" id="City">
                         <h5>City</h5>
-                        <input type="text" value="Dubai">
-                        <input type="text" value="United Arab Emirates">
+                        <input type="text" value="Lagos">
+                        <input type="text" value="Nigeria">
                     </div>
-                    <div class="card">
+                    <div class="card" id="people">
                         <h5>People</h5>
-                        <input type="text" value="4 People" id="people">
+                        <input type="text" value="5 People" id="people">
                         <button id="people_less">Less</button>
                         <button id="people_more">More</button>
                     </div>
@@ -74,22 +75,22 @@
                         <div class="left_box">
                             <h5>CHECK IN</h5>
                             <div class="date">
-                                <h3>Sat, 05 Jan</h3>
+                                <h3 id="checkin_data">Sat, 05 Jan</h3>
                                 <input type="date" id="checkin" value="2023-09-11">
                                 <i class="bi bi-calendar2-week-fill"></i>
                             </div>
-                            <button>Less</button>
-                            <button>More</button>
+                            <button id="checkin_less">Less</button>
+                            <button id="checkin_more">More</button>
                         </div>
                         <div class="right_box">
                             <h5>CHECK OUT</h5>
                             <div class="date">
-                                <h3>Sun, 06 Jan</h3>
-                                <input type="date" id="checkin" value="2023-09-11">
+                                <h3 id="checkout_data">Sun, 06 Jan</h3>
+                                <input type="date" id="checkout" value="2023-09-11">
                                 <i class="bi bi-calendar2-week-fill"></i>
                             </div>
-                            <button>Less</button>
-                            <button>More</button>
+                            <button id="checkout_less">Less</button>
+                            <button id="checkout_more">More</button>
                         </div>
                     </div>
                 </div>
@@ -99,12 +100,12 @@
     <div class="map">
         <div class="address_bx">
             <div class="location_bx">
-                <h6>Location</h6>
+                <h4>Location</h4>
                 <h4>Banana Island House</h4>
             </div>
             <i class="bi bi-fullscreen-exit"></i>
         </div>
-        <!-- <iframe src="https://my.atlist.com/map/b00cc3da-781f-4cc5-ac22-2fa3becb1fd6?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
+        <iframe src="https://my.atlist.com/map/b00cc3da-781f-4cc5-ac22-2fa3becb1fd6?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
     </div>
 
     <div class="home">
@@ -115,7 +116,7 @@
 
         <div class="home_bx">
             <div class="card">
-                <img src="./Assets/images/real estate.avif" alt="">
+                <img src="./Assets/images/realestate.avif" alt="">
                 <div class="content">
                     <i class="bi bi-balloon-heart"></i>
                     <div class="cont">
@@ -125,7 +126,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./Assets/images/real estate.avif" alt="">
+                <img src="./Assets/images/Realestate2.jpg" alt="">
                 <div class="content">
                     <i class="bi bi-balloon-heart"></i>
                     <div class="cont">
@@ -135,7 +136,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./Assets/images/real estate.avif" alt="">
+                <img src="./Assets/images/realestate.avif" alt="">
                 <div class="content">
                     <i class="bi bi-balloon-heart"></i>
                     <div class="cont">
@@ -145,7 +146,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./Assets/images/real estate.avif" alt="">
+                <img src="./Assets/images/realestate.avif" alt="">
                 <div class="content">
                     <i class="bi bi-balloon-heart"></i>
                     <div class="cont">
@@ -155,7 +156,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./Assets/images/real estate.avif" alt="">
+                <img src="./Assets/images/realestate.avif" alt="">
                 <div class="content">
                     <i class="bi bi-balloon-heart"></i>
                     <div class="cont">
@@ -172,7 +173,7 @@
         <h2>Our Service</h2>
         <div class="box">
             <div class="img_bx">
-                <img src="./Assets/images/Real estate 2.jpg" alt="">
+                <img src="./Assets/images/Realestate2.jpg" alt="">
             </div>
             <div class="cont_box">
                 <h6><span>OR SERVICE</span></h6>
@@ -189,7 +190,13 @@
     </section>
 
 
-    <script src="./Assets/main.js"></script>
+
+    <footer>
+        <h4><i class="bi bi-house-door-fill"></i> House</h4>
+    </footer>
+
+
+    <script src="./Assets/app.js"></script>
 </body>
 
 </html>

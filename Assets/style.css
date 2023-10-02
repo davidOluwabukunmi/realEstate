@@ -8,13 +8,38 @@ html{
     font-family: 'poppins', sans-serif;
 }
 
+:root{ 
+    --background: url(/Assets/images/House1.avif) no-repeat center/cover    ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 header{
-    width: 82%;
+    width: 92%;
     height: 85vh;
     /* border: 1px solid #000; */
     margin: auto;
     transition: .1s linear;
 }
+
+
+
+
+/* 
+.header .some-element {
+    overflow: hidden;
+} */
+
+
+
+
+
+
+
+
+
+
 
 header nav{
     width: 100%;
@@ -102,7 +127,9 @@ header .content::before{
     position: absolute;
     width: 100%;
     height: 90%;
-    background: url(/Assets/images/House1.avif);
+    background: var(--background);
+    background: var(--background);
+    /* background: url(/Assets/images/House1.avif); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -206,11 +233,13 @@ header .content .cont_bx .image_bx .card h6{
 
 header .content .choose_bx{
     position: relative;
-    width: 90%;
+    width: 98%;
     height: auto;
+    top: 15%;
+    /* height: 50%; */
     margin: auto;
     /* border: 1px solid #000; */
-    /* margin-top: 0; */
+    /* margin-top: 28%; */
 }
 
 
@@ -314,7 +343,7 @@ header .content .choose_bx .select .card:nth-child(3){
    align-items: center;
    justify-content: space-between;
    padding: 10px 15px;
-   gap: 20px;
+   gap: 10px;
 
 }
 
@@ -331,10 +360,11 @@ header .content .choose_bx .select .card:nth-child(3) .date input{
     width: 25px;
     height: 30px;
     margin-left: 10px;
-    z-index: 99999999999999999999999;
+    z-index: 99999999999999999999999;  
     opacity: 0;
-    /* overflow: hidden;  */
+    overflow: hidden; 
 }
+
 
 
 header .content .choose_bx .select .card:nth-child(3) .date i{
@@ -362,6 +392,7 @@ header .content .choose_bx .select .card:nth-child(3) .date h5{
     height: 350px;
     /* border: 1px solid #000; */
     top: -110px;
+    /* padding-top: 50vh; */
     overflow: hidden;
     z-index: 0;
 }
@@ -416,11 +447,11 @@ header .content .choose_bx .select .card:nth-child(3) .date h5{
 
 .home{
     position: relative;
-    width: 75%;
+    width: 92%;
     height: 200px;
     margin: auto;
     /* border: 1px solid #000; */
-    top: -170px;
+    top: px;
     z-index: 2;
 }
 
@@ -548,10 +579,11 @@ header .content .choose_bx .select .card:nth-child(3) .date h5{
 
 section{
     position: relative;
-    width: 65%;
+    width: 75%;
     height: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: auto;
+    margin-top: 330px;
 }
 
 section h2{
@@ -571,7 +603,7 @@ section .box .img_bx ,
  .cont_box{
     width: 60%;
     height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -592,38 +624,12 @@ section .box .cont_box{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
 section .box .cont_box h6{
     position: relative;
 }
 
 
-section .box .cont_box h6 span{
+section .box .cont_box h6 span {
     margin-left: 25px;
 }
 
@@ -631,30 +637,30 @@ section .box .cont_box h6::before{
     content: '';
     position: absolute;
     width: 20px;
-    line-height: 1.5px;
-    background: rgb(136, 136, 136);
+    height: 1.1px;
+    background:  rgb(136, 136, 136);
     top: 7px;
 }
 
 
 section .box .cont_box h1{
-   font-weight: 600;
-   margin: 20px 0px;
+    font-weight: 600;
+    margin: 10px 0px;
 }
 
 section .box .cont_box p{
-  font-size: 12px;
+     font-size: 12px;
 }
 
 
-section .box .cont_box ul {
-    list-style-type: none;
+
+section .box .cont_box ul{
+    list-style-type: none; 
     flex-wrap: wrap;
     margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
 }
 
 
@@ -663,7 +669,7 @@ section .box .cont_box ul li{
     font-size: 13px;
     font-weight: bold;
     width: 200px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin-top: 20px;
 }
 
@@ -671,4 +677,54 @@ section .box .cont_box ul li{
 
 
 
- */
+section .box .cont_box ul li::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: skyblue;
+    border-radius: 50%;
+    left: -20px;
+    top: 8px;
+}
+
+
+
+
+
+footer{
+    widows: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    margin-top: 50px;
+}
+
+
+footer h4{
+    color: #fff;
+}
+
+
+footer h4 .bi{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
