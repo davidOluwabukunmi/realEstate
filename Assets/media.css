@@ -298,17 +298,18 @@
 
 
     header .content .choose_bx .select .card:nth-child(1) {
-        width: 130px;
+        width: 120px;
         height: 110px;
     }
 
 
 
     header .content .choose_bx .select .card:nth-child(2) {
-        width: 140px;
+        width: 148px;
         height: 110px;
     }
 
+    
     header .content .choose_bx .select .card:nth-child(3) {
         padding: 5px 1px;
         padding-right: 120px;

@@ -31,6 +31,18 @@ people_more.addEventListener('click', () => {
     }
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
 let checkout_data = document.getElementById(('checkout_data'))
 let checkout = document.getElementById(('checkout'))
 
